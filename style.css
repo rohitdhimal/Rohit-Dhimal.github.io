@@ -1,0 +1,56 @@
+body{
+    font-family: 'Hind Madurai', sans-serif;
+    background: #3D3D3D !important;
+    color: #f1f1f1 !important;
+    padding: 50px;
+}
+
+.heading{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-family: 'Lora', serif;
+}
+
+.home-body{
+    margin-top: 50px;
+    padding: 80px;
+}
+
+.home-body-rect-shape{
+    height: 10px;
+    width: 15em;
+    background: #00CCC0;
+}
+
+.home-body-heading-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48.83px;
+}
+
+.home-body-heading-sub{
+    font-family: 'Lora', serif;
+    font-size: 25px;
+}
+
+.home-body-area{
+    height: auto;
+    width: 70%;
+}
+
+.home-body-heading-sub-text{
+    font-size: 16px;
+}
+
+.home-body-heading{
+    position: relative;
+}
+
+.home-corona{
+    position: absolute;
+    background-size: cover;
+    object-position: 10px 10px;
+    z-index: -1;
+    opacity: 50%;
+}
