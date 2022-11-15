@@ -35,10 +35,12 @@ body{
 .text-area-banner{
     padding: 0px 0px 0px 80px;
 }
+
 .rounded-img{
     border-radius: 50%;
     width: 80px;
 }
+
 .text-area{
     font-family: 'Lora', serif;
 }
@@ -54,7 +56,7 @@ body{
 	height: 50%;
 	position: relative;
 	display: flex;
-	perspective: 10px;
+	perspective: 50px;
 }
 
 .frame {
@@ -168,9 +170,85 @@ body{
 	}
 }
 
+.btn-blue-outline{
+    color: #f1f1f1;
+    padding: 8px 25px;
+    border-radius: 10px;
+    border: #f1f1f1 1px solid;
+    text-decoration: none;
+}
+
+.btn-blue-outline:hover{
+    color: #0C1321;
+    background: #f1f1f1;
+    transition: 0.5s;
+}
 
 /* Media Query */
 
-@media only screen and (max-width: 720px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navbar-img{
+        width: 100px;
+    }
 
+    .hero-banner{
+        padding: 50px;
+    }
+
+    .text-area-banner{
+        padding: 0px 0px 0px 30px;
+    }
+
+    .banner-area-three{
+        width: 100%;
+    }
+
+    .frame{
+        width: 150px;
+        height: 150px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .frame{
+        width: 250px;
+        height: 250px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .frame {
+        z-index: -99;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        border-radius: 50px;
+        border: 5px solid #0ff;
+        box-shadow: 0 0 10px #0ff,
+            0 0 30px #0ff;
+        animation: zooming 4s linear infinite alternate;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
