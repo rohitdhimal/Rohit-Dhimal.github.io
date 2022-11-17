@@ -49,6 +49,65 @@ body{
     width: 70%;
 }
 
+.h-b-c1{
+    background: #ffe593;
+    color: #000;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.h-b-c2{
+    background: #96e5cc;
+    color: #000;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+/* Two Lines */
+.lines{
+    z-index: -999;
+    position: relative;
+}
+
+.first-line{
+    background: rgb(66, 66, 66);
+    height: 100vh;
+    width: 2px;
+    position: absolute;
+    opacity: 0.1;
+    top: 0px;
+    left: 200px;
+}
+
+.second-line{
+    background: rgb(66, 66, 66);
+    height: 100vh;
+    width: 2px;
+    position: absolute;
+    opacity: 0.1;
+    top: 0px;
+    left: 450px;
+}
+
+.third-line{
+    background: rgb(66, 66, 66);
+    height: 100vh;
+    width: 2px;
+    position: absolute;
+    opacity: 0.1;
+    top: 0px;
+    left: 670px;
+}
+
+.fourth-line{
+    background: rgb(66, 66, 66);
+    height: 100vh;
+    width: 2px;
+    position: absolute;
+    opacity: 0.1;
+    top: 0px;
+    left: 900px;
+}
 /* animated background */
 
 .container{
@@ -211,11 +270,42 @@ body{
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    .first-line{
+        left: 120px;
+    }
+
+    .second-line{
+        left: 280px;
+    }
+
+    .third-line{
+        display: none;
+    }
+
+    .fourth-line{
+        display: none;
+    }
     
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    .frame{
+        width: 250px;
+        height: 250px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .third-line{
+        display: none;
+    }
+
+    .fourth-line{
+        display: none;
+    }
 
 }
 
@@ -228,10 +318,21 @@ body{
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    .third-line{
+        display: inline;
+    }
+
+    .fourth-line{
+        display: none;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .fourth-line{
+        display: inline;
+    }
 
 }
 
